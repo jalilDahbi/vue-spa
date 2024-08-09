@@ -3,7 +3,31 @@
 </template>
 
 <script>
-
+  export default {
+    data() {
+          return {
+            useNavDark: false,
+            activePage: 0,
+            pages: [
+              {
+                link: { text: "home", url: "index.html" },
+                content: "this is home page",
+                title: "home page",
+              },
+              {
+                link: { text: "about", url: "about.html" },
+                content: "this is about page",
+                title: "about page",
+              },
+              {
+                link: { text: "contact", url: "contact.html" },
+                content: "this is contact page",
+                title: "contact page",
+              },
+            ],
+          };
+        }
+  }
 </script>
 
 <style>
